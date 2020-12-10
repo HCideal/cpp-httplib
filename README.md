@@ -36,18 +36,22 @@ res->body;   // "Hello World!"
 ```
 
 编译：
-
+```c++
 g++ -std=c++11 server.cc -o server -lpthread
 
 g++ -std=c++11 client.cc -o client -lpthread
+```
 
 
 效果展示：
+```
 root@ubuntu:~/Desktop/cpp-httplib-0.7.17/example# ./client 
 200
 text/plain
 Hello World!
+```
 
+```
 swee@ubuntu:~/Desktop/cpp-httplib-0.7.17/example$ ./server 
 ================================
 GET HTTP/1.1 /hi
@@ -64,8 +68,7 @@ Content-Length: 13
 Content-Type: text/plain
 
 Hello World!
-
-
+```
 
 ### Try out the examples on Repl.it!
 
