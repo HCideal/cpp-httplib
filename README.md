@@ -35,6 +35,13 @@ res->status; // 200
 res->body;   // "Hello World!"
 ```
 
+编译：
+g++ -std=c++11 server.cc -o server -lpthread
+g++ -std=c++11 client.cc -o client -lpthread
+
+效果展示：
+
+
 ### Try out the examples on Repl.it!
 
 1. Run server at https://repl.it/@yhirose/cpp-httplib-server
